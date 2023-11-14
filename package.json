@@ -1,0 +1,64 @@
+{
+
+
+  
+
+  "name": "movie-website",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "results": [
+    {
+      "id": 766507,
+      "title": "Black Panther: Wakanda Forever",
+      "poster_path": "/1g0dhYtq4irZHBfzBK4MjQ3uHj3.jpg",
+      "release_date": "2022-11-11"
+    },
+    {
+      "id": 438148,
+      "title": "Avatar: The Way of Water",
+      "poster_path": "/225fevGH6hMV7WOMf8vaK5QHpZK.jpg",
+      "release_date": "2022-12-16"
+    },
+    {
+      "id": 724989,
+      "title": "The Batman",
+      "poster_path": "/74xTEgt73iYhUH9ky7sgVmH1aL.jpg",
+      "release_date": "2022-03-04"
+    }
+  ]
+  
+}
+

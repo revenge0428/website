@@ -1,0 +1,72 @@
+*{
+    border-radius: 0%;
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(90, 14, 90);
+}
+
+div{
+    display: block;
+}
+
+.app {
+    height: 90px;
+    position: relative;
+    padding: 0;
+    
+}
+
+
+
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 40px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
+button {
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.moviecard {
+    margin: 10px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
