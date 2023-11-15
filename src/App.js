@@ -19,6 +19,7 @@ const App = () => {
       searchMovies(movie);
     }
   };
+  
 
   useEffect(() => {
     searchMovies('Hero Academia');
