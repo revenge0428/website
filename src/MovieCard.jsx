@@ -1,30 +1,19 @@
-import React, { useState } from 'react';
+// Your JSX file
+
+import React from 'react';
 import './MovieCard.css';
 
-function MovieCard({ props }) {
-  const [isClicked, setIsClicked] = useState(false);
-  const [selectedMovie, setSelectedMovie] = useState(null);
-
-  const handleCardClick = () => {
-    setIsClicked(!isClicked);
-    setSelectedMovie(isClicked ? null : props);
-  };
-
+function MovieCard({ props, searchMovie }) {
   return (
-    <div className={`movie-container ${isClicked ? 'clicked' : ''}`} onClick={handleCardClick}>
-      <div className="moviecard">
-        <img src={props.Poster} alt={props.Title} />
-        <p>{props.Type}</p>
-        <p>{props.Year}</p>
-        <h1>{props.Title}</h1>
-      </div>
-      {selectedMovie && (
-        <div className="selected-movie-box">
-          <img src={selectedMovie.Poster} alt={selectedMovie.Title} />
-          <p style={{color:"#7f00ff"}}><em>Lorem ipsum dolor sit amet,sed do eiusmod <br></br> tempor incididunt ut labore et dolore magna aliqua.</em></p>
-          <button >Play trailer</button>
+    <div className='movie-container'>
+      <div className='moviecard' onClick={() => searchMovie(props.imdbID)}>
+        <img src={props.Poster} alt='poster' />
+        <div className='moviecard-content'>
+          <p>{props.Type}</p>
+          <p>{props.Year}</p>
+          <h1>{props.Title}</h1>
         </div>
-      )}
+      </div>
     </div>
   );
 }

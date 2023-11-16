@@ -19,11 +19,9 @@ div{
 .app {
     height: 90px;
     position: relative;
-    padding: 0;
+    padding: 30px;
     
 }
-
-
 
 h1 {
     color: rgb(0, 0, 0);
@@ -35,15 +33,17 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
-    margin-top: 5px;
 }
 
 input {
-    width: 90%;
-    padding: 10px;
-    border: 1px solid #ccc;
-  }
+  width: 20%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 60rem;
+  margin-bottom: 0.1rem;
+}
 
 button {
     margin-left: 10px;
@@ -52,7 +52,12 @@ button {
     color: #fff;
     border: none;
     cursor: pointer;
-  }
+    margin-bottom: 3rem;
+}
+
+button:hover {
+  background-color: #333;
+}
 
 .container {
     display: flex;
