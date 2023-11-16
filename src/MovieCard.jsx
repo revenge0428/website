@@ -17,16 +17,12 @@ function MovieCard({ props }) {
         <p>{props.Type}</p>
         <p>{props.Year}</p>
         <h1>{props.Title}</h1>
-        {isClicked && (
-          <div className="description">
-            <p>This is a placeholder description...</p>
-          </div>
-        )}
       </div>
       {selectedMovie && (
         <div className="selected-movie-box">
           <img src={selectedMovie.Poster} alt={selectedMovie.Title} />
           <p style={{color:"#7f00ff"}}><em>Lorem ipsum dolor sit amet,sed do eiusmod <br></br> tempor incididunt ut labore et dolore magna aliqua.</em></p>
+          <button >Play trailer</button>
         </div>
       )}
     </div>

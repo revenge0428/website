@@ -33,7 +33,7 @@ const App = () => {
           placeholder='search for movies'
           value={movie}
           onChange={(e) => setMovie(e.target.value)}
-          onKeyPress={handleKeyPress} // Handle Enter key press
+          onKeyPress={handleKeyPress}
         />
         <button onClick={() => searchMovies(movie)}>Search</button>
       </div>
